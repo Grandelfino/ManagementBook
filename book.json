@@ -1,0 +1,11 @@
+{
+    "title": "Grandelfino保守ドキュメント",
+    "language": "ja",
+    "root": "src",
+    "plugins":[
+        "-sharing",
+        "hide-published-with",
+        "back-to-top-button",
+        "copy-code-button"
+    ]
+}
