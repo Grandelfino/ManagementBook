@@ -6,6 +6,7 @@
         "-sharing",
         "hide-published-with",
         "back-to-top-button",
-        "copy-code-button"
+        "copy-code-button",
+        "collapsible-chapters"
     ]
 }

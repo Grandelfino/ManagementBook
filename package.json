@@ -1,6 +1,7 @@
 {
   "devDependencies": {
     "gh-pages": "^3.2.3",
+    "gitbook-plugin-collapsible-chapters": "^0.1.8",
     "gitbook-plugin-hide-published-with": "^0.0.1",
     "gitbook-plugin-theme-api": "^1.1.2",
     "honkit": "^3.6.20"
