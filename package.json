@@ -11,6 +11,7 @@
     "gitbook-plugin-copy-code-button": "^0.0.2"
   },
   "scripts": {
+    "build": "npx honkit build ./ ./docs",
     "dev": "npx honkit serve",
     "deploy": "gh-pages -d _book"
   }

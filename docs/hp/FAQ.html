@@ -20,6 +20,10 @@
                 
             
                 
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-collapsible-chapters/collapsible-chapters.css">
+                
+            
+                
                 <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
                 
             
@@ -274,7 +278,7 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="よくある質問">よくある質問</h1>
-<h3 id="q-ログイン画面が見当たりません">Q. ログイン画面が見当たりません</h3>
+<h3 id="q-graphcmsのログイン画面が見当たりません">Q. GraphCMSのログイン画面が見当たりません</h3>
 <p>A. ブラウザの表示サイズの問題かもしれません．
 パソコンのブラウザでサイトを開き，できるだけ大きい画面で表示してください．</p>
 <p>また，<strong>Sign up for free</strong>からでもログインは可能です．</p>
@@ -290,6 +294,10 @@
 スペースなどが入っていないか確認してみてください．</p>
 <h3 id="q-間違えてコンテンツを削除してしまいました．元に戻せますか？">Q. 間違えてコンテンツを削除してしまいました．元に戻せますか？</h3>
 <p>A. 削除したものは再度復元することはできません．</p>
+<h3 id="q-変更がhpに適応されません">Q. 変更がHPに適応されません</h3>
+<p>A. Publishを行う度，Netlifyによるサイトのビルドが行われます．
+ビルドには少し時間が掛かるため，変更後すぐにサイトに変更が行われるわけではありません．</p>
+<p>もし，時間が経っても変更が確認できない場合は<a href="https://www.netlify.com/" target="_blank">Netfilyの管理ページ</a>から，ビルドが成功しているか確認してください．</p>
 
                                 
                                 </section>
@@ -333,7 +341,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"FAQ","level":"1.3.5","depth":2,"next":{"title":"ブログ更新","level":"1.4","depth":1,"path":"blog/index.md","ref":"blog/index.md","articles":[]},"previous":{"title":"スポンサー","level":"1.3.4","depth":2,"path":"hp/sponsor.md","ref":"hp/sponsor.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","hide-published-with","back-to-top-button","copy-code-button"],"root":"src","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"hide-published-with":{},"back-to-top-button":{},"copy-code-button":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Grandelfino保守ドキュメント","language":"ja","gitbook":"*"},"file":{"path":"hp/FAQ.md","mtime":"2021-08-31T23:54:23.824Z","type":"markdown"},"gitbook":{"version":"3.6.20","time":"2021-09-01T00:00:08.400Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"FAQ","level":"1.3.5","depth":2,"next":{"title":"ブログ更新","level":"1.4","depth":1,"path":"blog/index.md","ref":"blog/index.md","articles":[]},"previous":{"title":"スポンサー","level":"1.3.4","depth":2,"path":"hp/sponsor.md","ref":"hp/sponsor.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","hide-published-with","back-to-top-button","copy-code-button","collapsible-chapters"],"root":"src","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search":{},"collapsible-chapters":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Grandelfino保守ドキュメント","language":"ja","gitbook":"*"},"file":{"path":"hp/FAQ.md","mtime":"2021-09-01T13:15:22.965Z","type":"markdown"},"gitbook":{"version":"3.6.20","time":"2021-09-02T02:04:48.426Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -396,6 +404,10 @@
     
         
         <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-collapsible-chapters/collapsible-chapters.js"></script>
         
     
         
