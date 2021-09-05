@@ -3,6 +3,7 @@
 * [はじめに](README.md)
 
 * [GitHubの使い方](github.md)
+* [ドメイン管理](domain/index.md)
 
 * [ホームページ管理](hp/index.md)
 

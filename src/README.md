@@ -12,6 +12,8 @@
 ## Index
 * [GitHubについて](github.md)
 
+* [ドメイン管理](domain/index.md)
+
 * [ホームページ更新](hp/index.md)
 
 * [ブログ更新](blog/index.md)
