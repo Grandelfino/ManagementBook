@@ -1,6 +1,6 @@
 # ドメイン管理
 
-チームでは [Valuedomain](https://www.value-domain.com/) というサイトからドメインを購入しています．
+チームでは [Valuedomain](https://www.value-domain.com/) というサイトから[grandelfino.net](grandelfino.net)というチームのドメインを購入しています．
 
 大会後の10月頃にドメインの期限が来るので，その一ヶ月前を目処に更新をお願いします．
 
