@@ -1,12 +1,13 @@
 # ホームページ管理
 
-サークルのホームページはNetlifyとGraphCMSというサービスを利用しています．
+~~サークルのホームページはNetlifyとGraphCMSというサービスを利用しています．~~  
+2022/9/24: NetlifyとContentfulに切り替えました
 
-本ページでは，主にコンテンツを管理しているGraphCMSについて解説します．
+本ページでは，主にコンテンツを管理しているContentfulについて解説します．
 
 ## ログイン方法
 
-[graphcms.com](https://graphcms.com/)にアクセスし，右上のLoginからログインできます．
+[contentful.com](https://www.contentful.com/)にアクセスし，右上のLoginからログインできます．
 
 ログインに必要なIDとパスワードは[ここ](https://github.com/Grandelfino/secrets)にあります．
 
@@ -16,10 +17,11 @@
 
 ![content](pic/content.png)
 
+新しくデータを追加する時は，右上の`Add Entry`から追加できます．
+
 ## 削除，編集
 
 コンテンツ一覧から削除したい，または非表示にしたいものにチェックボックスを入れ，
-- 削除したい場合には**Delete**
 
 - 非表示にしたい場合は**Unpublish**
 
@@ -27,6 +29,16 @@
 
 を選択することで表示の管理を行うことができます．
 
-また，編集を行いたい場合は左側のペンのアイコンをクリックすることで編集画面を表示することができます
-
 ![select](pic/select.png)
+
+## 表示カテゴリの選択
+
+左のタブから表示するカテゴリを選べます
+
+- Member
+- History
+- Machine
+- Sponsors
+- All
+
+![category](pic/category.png)
