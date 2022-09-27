@@ -1,7 +1,7 @@
 # ホームページ管理
 
 ~~サークルのホームページはNetlifyとGraphCMSというサービスを利用しています．~~  
-2022/9/24: NetlifyとContentfulに切り替えました
+> 2022/9/24: NetlifyとContentfulに切り替えました
 
 本ページでは，主にコンテンツを管理しているContentfulについて解説します．
 

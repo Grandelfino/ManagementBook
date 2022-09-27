@@ -9,8 +9,8 @@
     "honkit": "^4.0.0"
   },
   "scripts": {
-    "build": "npx honkit build ./ ./docs",
-    "dev": "npx honkit serve",
-    "deploy": "gh-pages -d docs"
+    "build": "npx honkit build .",
+    "develop": "npx honkit serve",
+    "deploy": "gh-pages -d _book"
   }
 }

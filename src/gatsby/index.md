@@ -53,6 +53,8 @@ git commit -m "some messages"　#コミットの作成
 git push #GitHubに送信
 ```
 
+> 初回Pushの際はGitHubにログインする必要があります
+
 この辺の説明はGoogleで`git push 方法`などで調べるといくつか記事が出てくるので参考に
 
 - [Githubに初めてpushするまでの話 - Zenn](https://zenn.dev/tknkaz/articles/04bbcb04a9b007)
