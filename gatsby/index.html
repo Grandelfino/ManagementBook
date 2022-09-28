@@ -375,6 +375,31 @@ git push #GitHubに送信
 <p>変更を反映する時は必ずGoogle Chormeなどのブラウザで表示をチェックすること．
 また，F12で開発者ツールを用いてスマートフォン用の表示に切り替えると小さい画面の表示も確認できる</p>
 <p><img src="pic/devtool.png" alt="devtool"></p>
+<h2 id="変更をpushできない時">変更をPushできない時</h2>
+<p><strong>自分以外の誰かが変更を加えていた時Pushに失敗します．</strong>
+これは，現在のホームページの状態が自分の手持ちの環境と異なってしまっているためにコードの競合が発生しているためです．</p>
+<p><strong>どんなことがあっても<code>git push --force</code>をしてはいけません!</strong></p>
+<p>まずは落ち着いて</p>
+<pre><code class="lang-shell">git fetch
+git pull
+</code></pre>
+<p>を実行してみてください</p>
+<h3 id="競合を回避する方法">競合を回避する方法</h3>
+<p>Pushに失敗する時は次の回避策を取ります</p>
+<ol>
+<li>強制的に最新の環境を手元に持ってくる</li>
+<li>手動で競合を修正する</li>
+</ol>
+<p>Gitに慣れていない場合は手元の環境を最新の状態に上書きしてしまう恐れがあるので，初めのうちは<strong>強制的に最新の状態にする</strong>ことをおすすめします．</p>
+<h3 id="強制的に最新の状態にする">強制的に最新の状態にする</h3>
+<p>最新の環境に影響を与えませんが，デメリットとして<strong>自分が手元で加えた変更を全て破棄</strong>します．</p>
+<blockquote>
+<p>ローカルのファイルを全てリモート（GitHubにアップロードされている）ファイルに置き換えている</p>
+</blockquote>
+<pre><code class="lang-shell">git fetch origin main
+git reset --hard origin/main
+</code></pre>
+<p>または，<code>git clone</code>してきたフォルダを削除して再度<code>git clone</code>する</p>
 
                                 
                                 </section>
@@ -418,7 +443,7 @@ git push #GitHubに送信
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"ホームページ更新","level":"1.7","depth":1,"next":{"title":"Index","level":"1.7.1","depth":2,"path":"gatsby/home.md","ref":"gatsby/home.md","articles":[]},"previous":{"title":"環境構築","level":"1.6","depth":1,"path":"env.md","ref":"env.md","articles":[]},"articles":[{"title":"Index","level":"1.7.1","depth":2,"path":"gatsby/home.md","ref":"gatsby/home.md","articles":[]},{"title":"画像","level":"1.7.2","depth":2,"path":"gatsby/images.md","ref":"gatsby/images.md","articles":[]}],"dir":"ltr"},"config":{"plugins":["-sharing","hide-published-with","back-to-top-button","copy-code-button","collapsible-chapters"],"root":"src","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search":{},"collapsible-chapters":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Grandelfino保守ドキュメント","language":"ja","gitbook":"*"},"file":{"path":"gatsby/index.md","mtime":"2022-09-27T06:33:41.108Z","type":"markdown"},"gitbook":{"version":"4.0.0","time":"2022-09-27T06:35:17.776Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"ホームページ更新","level":"1.7","depth":1,"next":{"title":"Index","level":"1.7.1","depth":2,"path":"gatsby/home.md","ref":"gatsby/home.md","articles":[]},"previous":{"title":"環境構築","level":"1.6","depth":1,"path":"env.md","ref":"env.md","articles":[]},"articles":[{"title":"Index","level":"1.7.1","depth":2,"path":"gatsby/home.md","ref":"gatsby/home.md","articles":[]},{"title":"画像","level":"1.7.2","depth":2,"path":"gatsby/images.md","ref":"gatsby/images.md","articles":[]}],"dir":"ltr"},"config":{"plugins":["-sharing","hide-published-with","back-to-top-button","copy-code-button","collapsible-chapters"],"root":"src","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search":{},"collapsible-chapters":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Grandelfino保守ドキュメント","language":"ja","gitbook":"*"},"file":{"path":"gatsby/index.md","mtime":"2022-09-28T22:58:46.158Z","type":"markdown"},"gitbook":{"version":"4.0.0","time":"2022-09-28T22:59:52.173Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
