@@ -11,6 +11,6 @@
   "scripts": {
     "build": "npx honkit build .",
     "develop": "npx honkit serve",
-    "deploy": "gh-pages -d _book"
+    "deploy": "npm run build && gh-pages -d _book"
   }
 }
